@@ -12,7 +12,7 @@ logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %
 def find_microphone():
     """Find the microphone device index."""
     for index, name in enumerate(sr.Microphone.list_microphone_names()):
-        if "Chill" in name: 
+        if "TONOR" in name: 
             logging.info(f"Found microphone: {name} at index {index}")
             return index
     logging.error("No suitable microphone found.")
@@ -72,7 +72,7 @@ while True:
         recognized_speech.append(text)
 
         messages = [
-            {"role": "system", "content": "You are a friendly and helpful assistant, and you will moderate this conversation."},
+            {"role": "system", "content": "You are a friendly and helpful assistant, and you will moderate this conversation, your answers will be no longer than 20 words."},
                  ]
         for speech in recognized_speech:
             messages.append({"role": "user", "content": speech})

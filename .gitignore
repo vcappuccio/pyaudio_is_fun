@@ -1,0 +1,67 @@
+# API key
+api_key.txt
+
+# Python virtual environment
+venv/
+env/
+myvenv/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Python egg metadata
+*.egg-info/
+*.egg
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# macOS specific files
+.DS_Store
+
+# Windows specific files
+Thumbs.db
+
+# IDE and editor specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# Build and distribution directories
+build/
+dist/
+
+# Documentation generated files
+docs/_build/
+
+# Coverage reports
+.coverage
+.coverage.*
+coverage.xml
+
+# Pytest cache directory
+.pytest_cache/
+
+# Mypy cache directory
+.mypy_cache/
+
+# Sphinx documentation
+_build/
+_static/
+_templates/
+
+# Personal notes or TODO files
+notes.txt
+TODO.md
